@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+header{
+    height: 100px;
+    background-color: #b90505;
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    padding-left:30px;
+    font-size: 25px;
+    z-index: 2;
+    top: 0px;
+}
+header a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    z-index: 2;
+}
+.logo{
+   margin-right: 10px;
+    font-size: 30px;
+    color: #ff0000;
+}
+p{   
+  line-height: 150%; 
+  border-left: 5px solid rgb(0, 0, 0);
+  padding-left: 6px;
+  margin-top: 4px;
+}
+
+.row{
+    overflow: auto
+}
+[class^=col-] {
+    float: left;
+    padding: 5px;
+} 
+
+.col-10{ width: 10%; }
+.col-20{ width: 20%; }
+.col-30{ width: 30%; }
+.col-33{ width: 33%; }
+.col-35{ width: 35%; }
+.col-40{ width: 40%; }
+.col-50{ width: 50%; }
+.col-60{ width: 60%; }
+.col-70{ width: 70%; }
+.col-80{ width: 80%; }
+.col-90{ width: 90%; }
+.col-100{ width: 100%; }
+
+.title{ 
+    border-bottom: 3px solid rgb(182, 5, 5) ;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: inline-block;/*sublinierea sa fie doar pentru cuvant*/
+    color: rgb(0, 0, 0);
+}
+.title-activit{
+    border-bottom: 2px solid rgb(6, 128, 145) ;
+    margin-bottom: 5px;
+    margin-top: 6px;
+    display: inline-block;/*sublinierea sa fie doar pentru cuvant*/
+    color: rgb(0, 0, 0);
+}
+
+}
+.title-motto{
+    border-bottom: 3px #000000 ;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family:"Times New Roman", Times, serif;
+}
+.page-conteiner{
+    min-height: 100vh;
+    margin-top: 80px;
+}
+main{      /*marginile casetelor de text*/
+    margin: 10px 60px 60px 180px;
+    padding: 10px 15px;
+   /* z-index: 2;*/  
+}   
+aside{
+    height: 90vh;
+    width: 180px;
+    position: fixed;
+    background: #b90202;
+    padding-top: 10px;
+    font-size: 20px;
+    /*z-index: 2;*/
+}
+aside a{
+    display: block ;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 7px;
+    font-size: 20px;
+}
+.img-index{
+     margin-left: 30px;
+     margin-right: 5px;
+     max-width: 95%;
+     height: 500px;
+     width: 100%;
+     align-items: center;
+     object-fit: cover;
+     border: 3px solid rgb(161, 7, 7);
+}
+.descriere{
+    background-color: rgba(255, 0, 0, 0.651);
+    border-radius: 10px;
+}
+.principal {    /*pentru caseta principal */
+    border: 0px solid;
+    height: 100%;
+    padding: 5px;
+    padding-top: 2px;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}    
+  /* background: linear-gradient(to right, rgb(29, 200, 206), rgb(171, 209, 226));*/  
+.centered{
+    align:center;
+}
+#tabel-contacte td{
+        border:4px solid rgb(25, 44, 153);
+        border-radius: 6px;
+        padding: 8px;
+}
+#tabel-modif td{
+    border:2px solid rgb(19, 33, 109);
+    margin-left: auto;
+     margin-right: auto;
+    border-spacing: 5px;
+    border-radius: 7px;
+    background: linear-gradient(#cdcdec, rgb(142, 216, 229));
+}
+.img-harta{
+    max-width:100%;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(187, 45, 123);
+}
+
+.gallery{
+    display: flex; /*ptr a arata imaginile risponse*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+.gallery img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;   
+    transition: all 0.3s;
+}
+.gallery img:hover{
+    transform: scale(1.05); /*imaginea se scaleaza*/
+    transition: all 0.3s;
+}
+
+
+.row-event{
+    margin-top: 10px;
+}
+.col-event{
+    margin-top: 40px;
+}
+.event{
+    padding:opx 10px 10px 10px;
+    background-color: #b1f3f7;
+    border-radius: 5px;
+    border: 1px solid #1ba1aa;
+    height: 320px;
+    overflow: auto;
+}
+.contact-img{    /*pentru butonul facebook*/
+    width: 70px;
+   position: fixed;/* butonul se misca impreuna cu bara, valoarea relativ -butonul ramine fixat*/
+   bottom: 30px;
+   right: 40px;
+   z-index: 1   /*ca sa scoata elementul deasupra*/
+}
+.row{
+    overflow: auto;
+    margin-top: 0px;
+}
+.descriere{
+    background-color: rgba(255, 255, 255, 0.651);
+    border-radius: 10px;
+}
+
+@media(max-width: 768px){    /*pentru dispozitive mai mici*/
+   body{
+       font-size: 18px;
+   }
+    main{
+        margin-left: 1%;
+        margin-right: 1%;   
+    }
+    [class^="col-"]{
+        width:100%;
+    }
+}
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(223, 6, 6);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
